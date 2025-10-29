@@ -12,21 +12,21 @@ const Hero = () => {
       />
       
       {/* Gradient overlay na parte inferior */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-[#E91E63]/50 to-[#E91E63]"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-accent/50 to-accent"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl text-center mx-auto text-white">
-          <h1 className="text-5xl md:text-6xl font-light mb-4 drop-shadow-lg">
+          <h1 className="font-display text-5xl md:text-6xl font-light mb-4 drop-shadow-lg">
             Você pensa e a gente produz.
           </h1>
-          <p className="text-3xl md:text-4xl font-light drop-shadow-lg">
+          <p className="font-display text-3xl md:text-4xl font-light drop-shadow-lg">
             simples assim.
           </p>
           <div className="mt-8">
             <a 
               href="#contact"
-              className="inline-block bg-white text-gray-800 px-8 py-3 rounded font-medium hover:bg-gray-100 transition-colors shadow-lg"
+              className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded font-medium hover:brightness-95 transition-colors shadow-lg"
             >
               Fale conosco
             </a>

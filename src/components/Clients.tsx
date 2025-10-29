@@ -3,10 +3,10 @@ const Clients = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light text-[#5BC0DE] mb-2">
+          <h2 className="font-display text-3xl md:text-4xl font-light text-primary mb-2">
             Alguns dos
           </h2>
-          <h3 className="text-3xl md:text-4xl font-light text-[#5BC0DE]">
+          <h3 className="font-display text-3xl md:text-4xl font-light text-primary">
             nosso clientes
           </h3>
         </div>

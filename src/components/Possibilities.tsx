@@ -3,11 +3,11 @@ const Possibilities = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#5BC0DE]">
+          <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-primary">
             Infinitas possibilidades em<br />
             impressão e comunicação visual.
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="font-display text-xl text-gray-600 mb-8">
             Deixe sua criatividade fazer a diferença
           </p>
           
@@ -32,7 +32,7 @@ const Possibilities = () => {
           <div className="mt-8">
             <a 
               href="#contact"
-              className="inline-block bg-[#5BC0DE] text-white px-8 py-3 rounded font-medium hover:bg-[#4AACCD] transition-colors"
+              className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded font-medium hover:brightness-95 transition-colors"
             >
               Fale conosco
             </a>
