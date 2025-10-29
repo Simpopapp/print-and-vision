@@ -24,9 +24,9 @@ const About = () => {
           </div>
 
           <div className="mt-8">
-            <a 
+            <a
               href="#about"
-              className="inline-block bg-white text-[#1e3a5f] px-8 py-3 rounded font-medium hover:bg-gray-100 transition-colors"
+              className="inline-block bg-transparent border border-white text-white px-8 py-3 rounded font-medium hover:bg-white hover:text-[#1e3a5f] transition-colors"
             >
               Leia Mais
             </a>
