@@ -1,37 +1,40 @@
 import heroImage from "@/assets/hero-bg.jpg";
+import { Facebook, Youtube, Instagram } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
-      {/* Background image com overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(${heroImage})`
-        }}
-      />
-      
-      {/* Gradient overlay na parte inferior */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-accent/50 to-accent"></div>
-
-      {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl text-center mx-auto text-white">
-          <h1 className="font-display text-5xl md:text-6xl font-light mb-4 drop-shadow-lg">
+    <section
+      className="relative h-[600px] bg-cover bg-center text-white"
+      style={{ backgroundImage: `url(${heroImage})` }}
+    >
+      <div className="container mx-auto px-4 h-full flex flex-col justify-center">
+        <div className="max-w-xl">
+          <h1 className="text-5xl font-light leading-tight">
             Você pensa e a gente produz.
           </h1>
-          <p className="font-display text-3xl md:text-4xl font-light drop-shadow-lg">
+          <p className="text-xl mt-2">
             simples assim.
           </p>
-          <div className="mt-8">
-            <a 
-              href="#contact"
-              className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded font-medium hover:brightness-95 transition-colors shadow-lg"
-            >
-              Fale conosco
-            </a>
-          </div>
+          <a
+            href="#contact"
+            className="mt-6 inline-block border border-white px-8 py-3 text-sm font-semibold hover:bg-white hover:text-gray-800 transition-colors"
+          >
+            Fale conosco
+          </a>
         </div>
+      </div>
+
+      {/* Social Icons */}
+      <div className="absolute right-4 top-1/2 -translate-y-1/2 flex flex-col gap-3">
+        <a href="#" className="p-2 bg-black bg-opacity-50 hover:bg-opacity-75 rounded-full">
+          <Facebook className="h-5 w-5" />
+        </a>
+        <a href="#" className="p-2 bg-black bg-opacity-50 hover:bg-opacity-75 rounded-full">
+          <Youtube className="h-5 w-5" />
+        </a>
+        <a href="#" className="p-2 bg-black bg-opacity-50 hover:bg-opacity-75 rounded-full">
+          <Instagram className="h-5 w-5" />
+        </a>
       </div>
     </section>
   );

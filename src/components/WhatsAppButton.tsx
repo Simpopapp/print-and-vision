@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { Whatsapp } from "@/components/Icons";
 
 const WhatsAppButton = () => {
   const whatsappNumber = "5519982368224";
@@ -14,13 +14,10 @@ const WhatsAppButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 bg-success hover:brightness-95 text-success-foreground p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 group"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
       aria-label="Fale conosco no WhatsApp"
     >
-      <MessageCircle className="h-8 w-8 group-hover:scale-110 transition-transform" />
-      <span className="absolute -top-12 right-0 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
-        Fale conosco!
-      </span>
+      <Whatsapp className="h-8 w-8" />
     </button>
   );
 };
